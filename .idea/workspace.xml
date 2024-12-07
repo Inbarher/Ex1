@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment=" start project">
+    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment=" still convert the number to decimal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1.java" afterDir="false" />
     </list>
@@ -75,7 +75,7 @@
       <workItem from="1732411241630" duration="2955000" />
       <workItem from="1733089790020" duration="2960000" />
       <workItem from="1733352593706" duration="1764000" />
-      <workItem from="1733590506862" duration="8386000" />
+      <workItem from="1733590506862" duration="11561000" />
     </task>
     <task id="LOCAL‎-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -109,7 +109,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1732413361978</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary=" still convert the number to decimal">
+      <option name="closed" value="true" />
+      <created>1733609969446</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1733609969446</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +128,7 @@
     <MESSAGE value="secend commit" />
     <MESSAGE value="third commit" />
     <MESSAGE value=" start project" />
-    <option name="LAST_COMMIT_MESSAGE" value=" start project" />
+    <MESSAGE value=" still convert the number to decimal" />
+    <option name="LAST_COMMIT_MESSAGE" value=" still convert the number to decimal" />
   </component>
 </project>

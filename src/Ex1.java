@@ -24,15 +24,17 @@ public class Ex1 {
             String[] parts = num.split("b",2);
             String number = parts[0];
             String base = parts[1];
-            //loop over all index in number and sum the power
-            String topString = "123456789ABCDEFG";
-            int sum = 0;
-            for (int i = number.length()-1; i >=0; i++) {
-                sum += (topString.indexOf(number.charAt(i))*(topString.indexOf(base.charAt(0))));
 
+            //loop over all index in number and sum the power
+            String topString = "0123456789ABCDEFG";
+            int sum = 0;
+            int g = 0;
+            for (int i = number.length()-1; i >=0; i--) {
+                sum += (topString.indexOf(number.charAt(i))*((int)(Math.pow(topString.indexOf(base.charAt(0)),g))));
+                g++;
             }
 
-            return ans;
+            return sum;
         }
         /**
          * This static function checks if the given String (g) is in a valid "number" format.

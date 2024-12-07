@@ -20,9 +20,18 @@ public class Ex1 {
          */
         public static int number2Int(String num) {
             int ans = -1;
-            // add your code here
+            // first we split the string to num and base
+            String[] parts = num.split("b",2);
+            String number = parts[0];
+            String base = parts[1];
+            //loop over all index in number and sum the power
+            String topString = "123456789ABCDEFG";
+            int sum = 0;
+            for (int i = number.length()-1; i >=0; i++) {
+                sum += (topString.indexOf(number.charAt(i))*(topString.indexOf(base.charAt(0))));
 
-            ////////////////////
+            }
+
             return ans;
         }
         /**

@@ -89,7 +89,13 @@ public class Ex1 {
          */
         public static String int2Number(int num, int base) {
             String ans = "";
-            // add your code here
+            // first convert the decimal number to the required base
+            String topString = "0123456789ABCDEF";
+
+            while (num>0){
+                ans +=  topString.charAt(num % base);
+                num /= base;
+            }
 
             ////////////////////
             return ans;

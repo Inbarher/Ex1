@@ -43,11 +43,41 @@ public class Ex1 {
          */
         public static boolean isNumber(String a) {
             boolean ans = true;
-            // add your code here
+            String topString = "0123456789ABCDEF";
+            //define default base 10
+            if (a.indexOf("b") == -1){
+                String[] parts = topString.split("A",2);
+                String newTopSrt = parts[0];
+                for (int i = 0; i < a.length(); i++) {
+                    if (newTopSrt.indexOf(a.charAt(i)) == -1){
+                        ans = false;
+                    }
+                }
+            }
+            //when b find in a
+            if (a.indexOf("b") != -1){
+                String[] parts = a.split("b",2);
+                String number = parts[0];
+                String base = parts[1];
 
-            ////////////////////
+                //check the base is in the format
+                if (base.length()!= 1){
+                    ans = false;
+                }
+                else {
+                    String[] newTop = topString.split(base,2);
+                    String newTopSrt = newTop[0];
+                    for (int i = 0; i < number.length(); i++) {
+                        if (newTopSrt.indexOf(number.charAt(i)) == -1){
+                            ans = false;
+                        }
+                    }
+                }
+            }
             return ans;
         }
+
+
 
         /**
          * Calculate the number representation (in basis base)

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="from decimal number to other base">
+    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="from decimal number to other base and reverse">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ex1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ex1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Inbar/IdeaProjects/Ex1/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Inbar/IdeaProjects/Ex1/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Inbar\IdeaProjects\Ex1\src" />
@@ -75,7 +81,7 @@
       <workItem from="1732411241630" duration="2955000" />
       <workItem from="1733089790020" duration="2960000" />
       <workItem from="1733352593706" duration="1764000" />
-      <workItem from="1733590506862" duration="21519000" />
+      <workItem from="1733590506862" duration="23728000" />
     </task>
     <task id="LOCAL‎-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -141,7 +147,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1733626794059</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL‎-00009" summary="from decimal number to other base and reverse">
+      <option name="closed" value="true" />
+      <created>1733627701983</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL‎-00009" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1733627701983</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +170,7 @@
     <MESSAGE value=" finish convert the number to decimal" />
     <MESSAGE value=" Checking if the number is in the correct format" />
     <MESSAGE value="from decimal number to other base" />
-    <option name="LAST_COMMIT_MESSAGE" value="from decimal number to other base" />
+    <MESSAGE value="from decimal number to other base and reverse" />
+    <option name="LAST_COMMIT_MESSAGE" value="from decimal number to other base and reverse" />
   </component>
 </project>

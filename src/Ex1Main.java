@@ -1,4 +1,4 @@
-package assignments.ex1;
+//package assignments.ex1;
 import java.util.Scanner;
 
 /**
@@ -16,9 +16,13 @@ public class Ex1Main {
             System.out.println("Enter a string as number#1 (or \"quit\" to end the program): ");
             num1 = sc.next();
             if (!num1.equals("quit")) {
-                // add your code here
-
-                /////////////////////
+                boolean A = Ex1.isNumber(num1);
+               System.out.println("num1 = " + num1 + " is number: " + A + " , value: " + Ex1.number2Int(num1));
+            }
+            num2 = sc.next();
+            if (!num2.equals("quit")) {
+                boolean B = Ex1.isNumber(num2);
+                System.out.println("num1 = " + num1 + " is number: " + B + " , value: " + Ex1.number2Int(num1));
             }
         }
         System.out.println("quiting now...");

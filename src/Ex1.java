@@ -12,95 +12,116 @@
  * You should implement the following static functions:
  */
 public class Ex1 {
-        /**
-         * Convert the given number (num) to a decimal representation (as int).
-         * It the given number is not in a valid format returns -1.
-         * @param num a String representing a number in basis [2,16]
-         * @return
-         */
-        public static int number2Int(String num) {
-            int ans = -1;
-            // first we split the string to num and base
-            String[] parts = num.split("b",2);
+    /**
+     * Convert the given number (num) to a decimal representation (as int).
+     * It the given number is not in a valid format returns -1.
+     *
+     * @param num a String representing a number in basis [2,16]
+     * @return
+     */
+    public static int number2Int(String num) {
+        int ans = -1;
+        // first we split the string to num and base
+        String[] parts = num.split("b", 2);
+        String number = parts[0];
+        String base = parts[1];
+
+        //loop over all index in number and sum the power
+        String topString = "0123456789ABCDEFG";
+        int sum = 0;
+        int g = 0;
+        for (int i = number.length() - 1; i >= 0; i--) {
+            sum += (topString.indexOf(number.charAt(i)) * ((int) (Math.pow(topString.indexOf(base.charAt(0)), g))));
+            g++;
+        }
+
+        return sum;
+    }
+
+    /**
+     * This static function checks if the given String (g) is in a valid "number" format.
+     *
+     * @param a a String representing a number
+     * @return true iff the given String is in a number format
+     */
+    public static boolean isNumber(String a) {
+        boolean ans = true;
+        String topString = "0123456789ABCDEF";
+        //define default base 10
+        if (a.indexOf("b") == -1) {
+            String[] parts = topString.split("A", 2);
+            String newTopSrt = parts[0];
+            for (int i = 0; i < a.length(); i++) {
+                if (newTopSrt.indexOf(a.charAt(i)) == -1) {
+                    ans = false;
+                }
+            }
+        }
+        //when b find in a
+        if (a.indexOf("b") != -1) {
+            String[] parts = a.split("b", 2);
             String number = parts[0];
             String base = parts[1];
 
-            //loop over all index in number and sum the power
-            String topString = "0123456789ABCDEFG";
-            int sum = 0;
-            int g = 0;
-            for (int i = number.length()-1; i >=0; i--) {
-                sum += (topString.indexOf(number.charAt(i))*((int)(Math.pow(topString.indexOf(base.charAt(0)),g))));
-                g++;
-            }
-
-            return sum;
-        }
-        /**
-         * This static function checks if the given String (g) is in a valid "number" format.
-         * @param a a String representing a number
-         * @return true iff the given String is in a number format
-         */
-        public static boolean isNumber(String a) {
-            boolean ans = true;
-            String topString = "0123456789ABCDEF";
-            //define default base 10
-            if (a.indexOf("b") == -1){
-                String[] parts = topString.split("A",2);
-                String newTopSrt = parts[0];
-                for (int i = 0; i < a.length(); i++) {
-                    if (newTopSrt.indexOf(a.charAt(i)) == -1){
+            //check the base is in the format
+            if (base.length() != 1) {
+                ans = false;
+            } else {
+                String[] newTop = topString.split(base, 2);
+                String newTopSrt = newTop[0];
+                for (int i = 0; i < number.length(); i++) {
+                    if (newTopSrt.indexOf(number.charAt(i)) == -1) {
                         ans = false;
                     }
                 }
             }
-            //when b find in a
-            if (a.indexOf("b") != -1){
-                String[] parts = a.split("b",2);
-                String number = parts[0];
-                String base = parts[1];
-
-                //check the base is in the format
-                if (base.length()!= 1){
-                    ans = false;
-                }
-                else {
-                    String[] newTop = topString.split(base,2);
-                    String newTopSrt = newTop[0];
-                    for (int i = 0; i < number.length(); i++) {
-                        if (newTopSrt.indexOf(number.charAt(i)) == -1){
-                            ans = false;
-                        }
-                    }
-                }
-            }
-            return ans;
         }
+        return ans;
+    }
 
 
+    /**
+     * Calculate the number representation (in basis base)
+     * of the given natural number (represented as an integer).
+     * If num<0 or base is not in [2,16] the function should return "" (the empty String).
+     *
+     * @param num  the natural number (include 0).
+     * @param base the basis [2,16]
+     * @return a String representing a number (in base) equals to num, or an empty String (in case of wrong input).
+     */
+    public static String int2Number(int num, int base) {
+        String ans = "";
+        // first convert the decimal number to the required base
+        String topString = "0123456789ABCDEFG";
 
-        /**
-         * Calculate the number representation (in basis base)
-         * of the given natural number (represented as an integer).
-         * If num<0 or base is not in [2,16] the function should return "" (the empty String).
-         * @param num the natural number (include 0).
-         * @param base the basis [2,16]
-         * @return a String representing a number (in base) equals to num, or an empty String (in case of wrong input).
-         */
-        public static String int2Number(int num, int base) {
-            String ans = "";
-            // first convert the decimal number to the required base
-            String topString = "0123456789ABCDEFG";
-
-            while (num>0){
-                ans +=  topString.charAt(num % base);
-                num /= base;
-            }
-            //revers ans
-            String reversedAns = new StringBuilder(ans).reverse().toString();
-            String Ans = reversedAns + "b" + topString.charAt(base);
-            return Ans;
+        while (num > 0) {
+            ans += topString.charAt(num % base);
+            num /= base;
         }
+        //revers ans
+        String reversedAns = new StringBuilder(ans).reverse().toString();
+        String Ans = reversedAns + "b" + topString.charAt(base);
+        return Ans;
+    }
+
+    public static boolean isnum(String num) {
+        boolean ans = true;
+        String topString = "0123456789";
+        for (int i = 0; i < num.length(); i++) {
+            if (topString.indexOf(num.charAt(i)) == -1) {
+                ans = false;
+            }
+        }
+        return ans;
+    }
+
+    public static boolean isbase(int num) {
+        boolean ans = true;
+        if (2 <= num && num <= 16) ;
+
+        return ans;
+    }
+
 
         /**
          * Checks if the two numbers have the same value.

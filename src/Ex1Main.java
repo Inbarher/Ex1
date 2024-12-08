@@ -22,8 +22,18 @@ public class Ex1Main {
             num2 = sc.next();
             if (!num2.equals("quit")) {
                 boolean B = Ex1.isNumber(num2);
-                System.out.println("num1 = " + num1 + " is number: " + B + " , value: " + Ex1.number2Int(num1));
+                System.out.println("num2 = " + num2 + " is number: " + B + " , value: " + Ex1.number2Int(num2));
             }
+           //
+            System.out.println("Enter a base for output: (a number [2,16]");
+            int b = sc.nextInt();
+            int sum = Ex1.number2Int(num1) + Ex1.number2Int(num2);
+            int mult = Ex1.number2Int(num1) * Ex1.number2Int(num2);
+            System.out.println(num1 +" + "+ num2 + " = " + Ex1.int2Number(sum,b));
+            System.out.println(num1 +" * "+ num2 + " = " + Ex1.int2Number(mult,b));
+            System.out.println("Max number over [" + num1 + "," + num2 + "," + Ex1.int2Number(sum,b) + "," +Ex1.int2Number(mult,b)+"] is:");
+
+
         }
         System.out.println("quiting now...");
     }

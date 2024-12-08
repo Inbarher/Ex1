@@ -90,15 +90,16 @@ public class Ex1 {
         public static String int2Number(int num, int base) {
             String ans = "";
             // first convert the decimal number to the required base
-            String topString = "0123456789ABCDEF";
+            String topString = "0123456789ABCDEFG";
 
             while (num>0){
                 ans +=  topString.charAt(num % base);
                 num /= base;
             }
+            //revers ans
+            String reversedAns = new StringBuilder(ans).reverse().toString();
 
-            ////////////////////
-            return ans;
+            return reversedAns;
         }
 
         /**

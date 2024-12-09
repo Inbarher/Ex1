@@ -147,9 +147,12 @@ public class Ex1 {
          */
         public static int maxIndex(String[] arr) {
             int ans = 0;
-            // add your code here
-
-            ////////////////////
-            return ans;
+            int max = number2Int(arr[0]);
+            for (int i = 0; i < arr.length; i++) {
+                if (number2Int(arr[i]) > max) {
+                    max = number2Int(arr[i]);
+                }
+            }
+            return max;
         }
 }

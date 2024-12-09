@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="small fixes before the tests">
+    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="thier tests passed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1Test.java" afterDir="false" />
@@ -65,6 +65,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Ex1Test.isBasisNumberTest">
+    <configuration name="Ex1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex1Main" />
+      <module name="Ex1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ex1Test.computeNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Ex1" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,6 +95,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Ex1Test.isBasisNumberTest" />
+        <item itemvalue="Application.Ex1Main" />
         <item itemvalue="JUnit.Ex1Test.computeNumberTest" />
       </list>
     </recent_temporary>
@@ -111,7 +119,7 @@
       <workItem from="1732411241630" duration="2955000" />
       <workItem from="1733089790020" duration="2960000" />
       <workItem from="1733352593706" duration="1764000" />
-      <workItem from="1733590506862" duration="41296000" />
+      <workItem from="1733590506862" duration="53020000" />
     </task>
     <task id="LOCAL‎-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -233,7 +241,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1733737232445</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL‎-00016" summary="thier tests passed">
+      <option name="closed" value="true" />
+      <created>1733740507953</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL‎-00016" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1733740507953</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +270,22 @@
     <MESSAGE value="continue to work on main" />
     <MESSAGE value="max function" />
     <MESSAGE value="small fixes before the tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="small fixes before the tests" />
+    <MESSAGE value="thier tests passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="thier tests passed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Ex1Test.java</url>
+          <line>25</line>
+          <properties class="Ex1Test" method="isBasisNumberTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

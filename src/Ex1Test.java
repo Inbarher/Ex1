@@ -13,6 +13,7 @@ public class Ex1Test {
             String s2 = "1011b2";
             int v = Ex1.number2Int(s2);
             assertEquals(v,11);
+
             String s10 = "1011bA";
             v = Ex1.number2Int(s10);
             s2 = Ex1.int2Number(v,2);
@@ -23,12 +24,12 @@ public class Ex1Test {
 
         @Test
         void isBasisNumberTest() {
-            String[] good = {"1", "1b2", "01b2", "123bA", "ABbG", "0bA"};
+            String[] good = {"1", "1b2", "01b2", "123bA","ABbG", "FbG", "0bA","0", "1bF"};
             for(int i=0;i<good.length;i=i+1) {
                 boolean ok = Ex1.isNumber(good[i]);
                 assertTrue(ok);
             }
-            String[] not_good = {"b2", "2b2", "1G3bG", " BbG", "0bbA", "abB", "!@b2", "A", "1bb2"}; //b2
+            String[] not_good = {"b2", "2b2", "1G3bG", " BbG", "0bbA", "abB", "!@b2", "A", "1bb2", "b", "10b", "0b","GbG","fbG"}; //1bf
             for(int i=0;i<not_good.length;i=i+1) {
                 boolean not_ok = Ex1.isNumber(not_good[i]);
                 assertFalse(not_ok);

@@ -56,6 +56,7 @@ public class Ex1 {
     public static boolean isNumber(String a) {
         boolean ans = true;
         String topString = "0123456789ABCDEF";
+        String topString2 = "23456789ABCDEFG";
         //define default base 10
         if (a.indexOf("b") == -1) {
             String[] parts = topString.split("A", 2);
@@ -77,10 +78,11 @@ public class Ex1 {
             }
 
             //check the base is in the format
-            if (base.length() != 1) {
+
+            if (topString2.indexOf(base) == -1 || base.length()!=1) {
                 ans = false;
             } else {
-                String[] newTop = topString.split(base, 2);
+                String [] newTop = topString.split(base, 2);
                 String newTopSrt = newTop[0];
                 for (int i = 0; i < number.length(); i++) {
                     if (newTopSrt.indexOf(number.charAt(i)) == -1) {

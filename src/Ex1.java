@@ -154,14 +154,15 @@ public class Ex1 {
          * @return the index in the array in with the largest number (in value).
          *
          */
-        public static int maxIndex(String[] arr) {
-            int ans = 0;
+        public static String maxIndex(String[] arr) {
+            String ans = arr[0];
             int max = number2Int(arr[0]);
             for (int i = 0; i < arr.length; i++) {
                 if (number2Int(arr[i]) > max) {
                     max = number2Int(arr[i]);
+                    ans = arr[i];
                 }
             }
-            return max;
+            return ans;
         }
 }

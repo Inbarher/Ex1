@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="max function">
+    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="small fixes before the tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1Main.java" afterDir="false" />
@@ -81,7 +81,7 @@
       <workItem from="1732411241630" duration="2955000" />
       <workItem from="1733089790020" duration="2960000" />
       <workItem from="1733352593706" duration="1764000" />
-      <workItem from="1733590506862" duration="36531000" />
+      <workItem from="1733590506862" duration="37877000" />
     </task>
     <task id="LOCAL‎-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -187,7 +187,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1733732006023</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL‎-00014" summary="small fixes before the tests">
+      <option name="closed" value="true" />
+      <created>1733735577368</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL‎-00014" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1733735577368</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +215,7 @@
     <MESSAGE value="starting to work on main" />
     <MESSAGE value="continue to work on main" />
     <MESSAGE value="max function" />
-    <option name="LAST_COMMIT_MESSAGE" value="max function" />
+    <MESSAGE value="small fixes before the tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="small fixes before the tests" />
   </component>
 </project>

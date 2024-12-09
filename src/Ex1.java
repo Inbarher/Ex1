@@ -21,21 +21,30 @@ public class Ex1 {
      */
     public static int number2Int(String num) {
         int ans = -1;
-        // first we split the string to num and base
-        String[] parts = num.split("b", 2);
-        String number = parts[0];
-        String base = parts[1];
+        //check if num is in the correct format
+        if (isNumber(num)) {
+            if (num.indexOf("b") == -1){
+                num = num + "bA";
+            }
 
-        //loop over all index in number and sum the power
-        String topString = "0123456789ABCDEFG";
-        int sum = 0;
-        int g = 0;
-        for (int i = number.length() - 1; i >= 0; i--) {
-            sum += (topString.indexOf(number.charAt(i)) * ((int) (Math.pow(topString.indexOf(base.charAt(0)), g))));
-            g++;
+            // first we split the string to num and base
+            String[] parts = num.split("b", 2);
+            String number = parts[0];
+            String base = parts[1];
+
+            //loop over all index in number and sum the power
+            String topString = "0123456789ABCDEFG";
+            int sum = 0;
+            int g = 0;
+            for (int i = number.length() - 1; i >= 0; i--) {
+                sum += (topString.indexOf(number.charAt(i)) * ((int) (Math.pow(topString.indexOf(base.charAt(0)), g))));
+                g++;
+            }
+
+            return sum;
+        } else {
+            return ans;
         }
-
-        return sum;
     }
 
     /**

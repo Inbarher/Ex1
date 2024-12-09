@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="continue to work on main">
+    <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="max function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1Main.java" afterDir="false" />
@@ -81,7 +81,7 @@
       <workItem from="1732411241630" duration="2955000" />
       <workItem from="1733089790020" duration="2960000" />
       <workItem from="1733352593706" duration="1764000" />
-      <workItem from="1733590506862" duration="33433000" />
+      <workItem from="1733590506862" duration="36531000" />
     </task>
     <task id="LOCAL‎-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -179,7 +179,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1733692038757</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL‎-00013" summary="max function">
+      <option name="closed" value="true" />
+      <created>1733732006023</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL‎-00013" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1733732006023</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +206,7 @@
     <MESSAGE value="Changing the function output from a regular string to a formatted string" />
     <MESSAGE value="starting to work on main" />
     <MESSAGE value="continue to work on main" />
-    <option name="LAST_COMMIT_MESSAGE" value="continue to work on main" />
+    <MESSAGE value="max function" />
+    <option name="LAST_COMMIT_MESSAGE" value="max function" />
   </component>
 </project>

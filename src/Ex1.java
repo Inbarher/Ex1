@@ -72,6 +72,10 @@ public class Ex1 {
             String number = parts[0];
             String base = parts[1];
 
+            if (number == ""){
+                ans = false;
+            }
+
             //check the base is in the format
             if (base.length() != 1) {
                 ans = false;
@@ -139,10 +143,10 @@ public class Ex1 {
          * @return true iff the two numbers have the same values.
          */
         public static boolean equals(String n1, String n2) {
-            boolean ans = true;
-            // add your code here
-
-            ////////////////////
+            boolean ans = false;
+            if (number2Int(n1)==number2Int(n2)){
+                ans = true;
+            }
             return ans;
         }
 

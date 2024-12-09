@@ -7,7 +7,7 @@
     <list default="true" id="4e222419-47b9-4740-affe-074c6b7e117d" name="Changes" comment="small fixes before the tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ex1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ex1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex1Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,8 @@
   "keyToString": {
     "Application.Ex1Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.Ex1Test.computeNumberTest.executor": "Run",
+    "JUnit.Ex1Test.isBasisNumberTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -62,6 +64,34 @@
       <recent name="C:\Users\Inbar\IdeaProjects\Ex1\src" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.Ex1Test.isBasisNumberTest">
+    <configuration name="Ex1Test.computeNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Ex1Test" />
+      <option name="METHOD_NAME" value="computeNumberTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex1Test.isBasisNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ex1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Ex1Test" />
+      <option name="METHOD_NAME" value="isBasisNumberTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Ex1Test.isBasisNumberTest" />
+        <item itemvalue="JUnit.Ex1Test.computeNumberTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -81,7 +111,7 @@
       <workItem from="1732411241630" duration="2955000" />
       <workItem from="1733089790020" duration="2960000" />
       <workItem from="1733352593706" duration="1764000" />
-      <workItem from="1733590506862" duration="37877000" />
+      <workItem from="1733590506862" duration="41296000" />
     </task>
     <task id="LOCAL‎-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -195,7 +225,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1733735577368</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL‎-00015" summary="small fixes before the tests">
+      <option name="closed" value="true" />
+      <created>1733737232445</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL‎-00015" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1733737232445</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

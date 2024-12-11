@@ -22,29 +22,40 @@ public class Ex1Main {
             if (!num1.equals("quit")) {
                 boolean A = Ex1.isNumber(num1);
                 System.out.println("num1 = " + num1 + " is number: " + A + " , value: " + Ex1.number2Int(num1));
+                if (Ex1.number2Int(num1)==-1){
+                    continue;
+                }
             }
-            //input 2 - num2
-            System.out.println("Enter a string as number#2 (or \"quit\" to end the program)");
-            num2 = sc.next();
-            if (!num2.equals("quit")) {
-                boolean B = Ex1.isNumber(num2);
-                System.out.println("num2 = " + num2 + " is number: " + B + " , value: " + Ex1.number2Int(num2));
-            }
-           //input 3 - base
-            System.out.println("Enter a base for output: (a number [2,16]");
-            int b = sc.nextInt();
+            else break;
 
-            int sum = Ex1.number2Int(num1) + Ex1.number2Int(num2);
-            int mult = Ex1.number2Int(num1) * Ex1.number2Int(num2);
+                //input 2 - num2
+                System.out.println("Enter a string as number#2 (or \"quit\" to end the program)");
+                num2 = sc.next();
+                if (!num2.equals("quit")) {
+                    boolean B = Ex1.isNumber(num2);
+                    System.out.println("num2 = " + num2 + " is number: " + B + " , value: " + Ex1.number2Int(num2));
+                    if (Ex1.number2Int(num2) == -1){
+                        continue;
+                    }
+                }
+                else break;
 
-            System.out.println(num1 +" + "+ num2 + " = " + Ex1.int2Number(sum,b));
-            System.out.println(num1 +" * "+ num2 + " = " + Ex1.int2Number(mult,b));
+                    //input 3 - base
+                    System.out.println("Enter a base for output: (a number [2,16]");
+                    int b = sc.nextInt();
 
-            System.out.print("Max number over [" + num1 + "," + num2 + "," + Ex1.int2Number(sum,b) + "," +Ex1.int2Number(mult,b)+"] is:");
+                    int sum = Ex1.number2Int(num1) + Ex1.number2Int(num2);
+                    int mult = Ex1.number2Int(num1) * Ex1.number2Int(num2);
 
-            String [] arr1 = {num1,num2,Ex1.int2Number(sum,b),Ex1.int2Number(mult,b)};
+                    System.out.println(num1 + " + " + num2 + " = " + Ex1.int2Number(sum, b));
+                    System.out.println(num1 + " * " + num2 + " = " + Ex1.int2Number(mult, b));
 
-            System.out.println(Ex1.maxIndex(arr1));
+                    System.out.print("Max number over [" + num1 + "," + num2 + "," + Ex1.int2Number(sum, b) + "," + Ex1.int2Number(mult, b) + "] is:");
+
+                    String[] arr1 = {num1, num2, Ex1.int2Number(sum, b), Ex1.int2Number(mult, b)};
+
+                    System.out.println(Ex1.maxIndex(arr1));
+
 
         }
         System.out.println("quiting now...");

@@ -29,7 +29,7 @@ public class Ex1Main {
             else break;
 
                 //input 2 - num2
-                System.out.println("Enter a string as number#2 (or \"quit\" to end the program)");
+            System.out.println("Enter a string as number#2 (or \"quit\" to end the program)");
                 num2 = sc.next();
                 if (!num2.equals("quit")) {
                     boolean B = Ex1.isNumber(num2);
@@ -41,7 +41,7 @@ public class Ex1Main {
                 else break;
 
                     //input 3 - base
-                    System.out.println("Enter a base for output: (a number [2,16]");
+            System.out.println("Enter a base for output: (a number [2,16]");
                     int b = sc.nextInt();
 
                     int sum = Ex1.number2Int(num1) + Ex1.number2Int(num2);

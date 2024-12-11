@@ -19,6 +19,8 @@ public class Ex1 {
      * @param num a String representing a number in basis [2,16]
      * @return
      */
+
+
     public static int number2Int(String num) {
         int ans = -1;
         //check if num is in the correct format
@@ -53,6 +55,7 @@ public class Ex1 {
      * @param a a String representing a number
      * @return true iff the given String is in a number format
      */
+
     public static boolean isNumber(String a) {
         boolean ans = true;
         String topString = "0123456789ABCDEF";

@@ -29,22 +29,24 @@ public class Ex1 {
                 num = num + "bA";
             }
 
-            // first we split the string to num and base
-            String[] parts = num.split("b", 2);
-            String number = parts[0];
-            String base = parts[1];
+                // first we split the string to num and base
+                String[] parts = num.split("b", 2);
+                String number = parts[0];
+                String base = parts[1];
 
-            //loop over all index in number and sum the power
-            String topString = "0123456789ABCDEFG";
-            int sum = 0;
-            int g = 0;
-            for (int i = number.length() - 1; i >= 0; i--) {
-                sum += (topString.indexOf(number.charAt(i)) * ((int) (Math.pow(topString.indexOf(base.charAt(0)), g))));
-                g++;
-            }
+                //loop over all index in number and sum the power
+                String topString = "0123456789ABCDEFG";
+                int sum = 0;
+                int g = 0;
+                for (int i = number.length() - 1; i >= 0; i--) {
+                    sum += (topString.indexOf(number.charAt(i)) * ((int) (Math.pow(topString.indexOf(base.charAt(0)), g))));
+                    g++;
+                }
 
-            return sum;
-        } else {
+                return sum;
+
+        }
+        else {
             return ans;
         }
     }
@@ -113,6 +115,7 @@ public class Ex1 {
     //The function returns the number as a string from the format <num><b><base>
     public static String int2Number(int num, int base) {
         String ans = "";
+        String Ans = "";
 
         String topString = "0123456789ABCDEFG";
         // first convert the decimal number to the required base
@@ -122,7 +125,9 @@ public class Ex1 {
         }
         //revers ans
         String reversedAns = new StringBuilder(ans).reverse().toString();
-        String Ans = reversedAns + "b" + topString.charAt(base);
+//
+        Ans = reversedAns + "b" + topString.charAt(base);
+
         return Ans;
     }
 

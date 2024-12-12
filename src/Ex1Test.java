@@ -44,10 +44,13 @@ public class Ex1Test {
            Assert.assertEquals("6CbD", Ex1.int2Number(90,13));
            Assert.assertEquals("6BbC", Ex1.int2Number(83,12));
            Assert.assertEquals("6AbB", Ex1.int2Number(76,11));
-           Assert.assertEquals("69bA", Ex1.int2Number(69,10));
+           Assert.assertEquals("60", Ex1.int2Number(60,10));
            Assert.assertEquals("68b9", Ex1.int2Number(62,9));
            Assert.assertEquals("67b8", Ex1.int2Number(55,8));
-
+           Assert.assertEquals("0b2", Ex1.int2Number(0,2));
+           Assert.assertEquals("0", Ex1.int2Number(0,10));
+           Assert.assertEquals("1b2", Ex1.int2Number(1,2));
+           Assert.assertEquals("7", Ex1.int2Number(7,10));
 
         }
         @Test

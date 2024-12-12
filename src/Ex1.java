@@ -57,12 +57,14 @@ public class Ex1 {
      * @param a a String representing a number
      * @return true iff the given String is in a number format
      */
+
     //Checks if string is in the true format: <num><b><base>
     //The function returns true or false.
     public static boolean isNumber(String a) {
         boolean ans = true;
         String topString = "0123456789ABCDEF";
         String topString2 = "23456789ABCDEFG";
+
         //define default base 10
         if (a.indexOf("b") == -1) {
             String[] parts = topString.split("A", 2);
@@ -85,9 +87,12 @@ public class Ex1 {
 
             //check the base is in the format
 
+            //if the base is not in the format
             if (topString2.indexOf(base) == -1 || base.length()!=1) {
                 ans = false;
-            } else {
+            }
+            else {
+                //check all the char at num
                 String [] newTop = topString.split(base, 2);
                 String newTopSrt = newTop[0];
                 for (int i = 0; i < number.length(); i++) {
@@ -106,28 +111,44 @@ public class Ex1 {
      * of the given natural number (represented as an integer).
      * If num<0 or base is not in [2,16] the function should return "" (the empty String).
      *
-     * @param num  the natural number (include 0).
+     * @param numm  the natural number (include 0).
      * @param base the basis [2,16]
      * @return a String representing a number (in base) equals to num, or an empty String (in case of wrong input).
      */
+
     //Converts a decimal number to a number in the requested base.
     //The function accepts a number in base 10 and a base between 2-16.
     //The function returns the number as a string from the format <num><b><base>
-    public static String int2Number(int num, int base) {
+    public static String int2Number(int numm, int base) {
         String ans = "";
         String Ans = "";
-
+        int num = numm;
         String topString = "0123456789ABCDEFG";
-        // first convert the decimal number to the required base
-        while (num > 0) {
-            ans += topString.charAt(num % base);
-            num /= base;
-        }
-        //revers ans
-        String reversedAns = new StringBuilder(ans).reverse().toString();
-//
-        Ans = reversedAns + "b" + topString.charAt(base);
 
+        //in case that the base is 10
+        if (base==10) {
+            Ans = num +"";
+        }
+        else {
+            // first convert the decimal number to the required base
+            while (num > 0) {
+                ans += topString.charAt(num % base);
+                num /= base;
+            }
+            //revers ans
+            String reversedAns = new StringBuilder(ans).reverse().toString();
+
+            //write the number as a string in the format <num><b><base>
+            Ans = reversedAns + "b" + topString.charAt(base);
+
+            //Edge case
+            if (numm ==0) {
+                  Ans = "0" + Ans;
+                  if (base == 10) {
+                      Ans = "0";
+                  }
+            }
+        }
         return Ans;
     }
 
@@ -137,8 +158,8 @@ public class Ex1 {
          * @param n2 second number
          * @return true iff the two numbers have the same values.
          */
+
         //The function checks if value of two numbers is the same (numbers in the format <num><b><base>)
-        //
         public static boolean equals(String n1, String n2) {
             boolean ans = false;
             if (number2Int(n1)==number2Int(n2)){
@@ -155,8 +176,8 @@ public class Ex1 {
          * @return the index in the array in with the largest number (in value).
          *
          */
+
         //function that takes an array and prints the largest index in the array
-        //
         public static String maxIndex(String[] arr) {
             String ans = arr[0];
             int max = number2Int(arr[0]);

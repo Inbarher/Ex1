@@ -58,7 +58,7 @@ public class Ex1Main {
                     System.out.println(num1 + " + " + num2 + " = " + Ex1.int2Number(sum, b));
                     System.out.println(num1 + " * " + num2 + " = " + Ex1.int2Number(mult, b));
 
-                    System.out.print("Max number over [" + num1 + "," + num2 + "," + Ex1.int2Number(sum, b) + "," + Ex1.int2Number(mult, b) + "] is:");
+                    System.out.print("Max number over ["+num1+","+num2+","+Ex1.int2Number(sum, b)+","+Ex1.int2Number(mult, b) + "] is:");
 
                     String[] arr1 = {num1, num2, Ex1.int2Number(sum, b), Ex1.int2Number(mult, b)};
 

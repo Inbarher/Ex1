@@ -23,6 +23,7 @@ public class Ex1Main {
                 boolean A = Ex1.isNumber(num1);
                 System.out.println("num1 = " + num1 + " is number: " + A + " , value: " + Ex1.number2Int(num1));
                 if (Ex1.number2Int(num1)==-1){
+                    System.out.println("ERR: num1 is in the wrong format! ("+num1+")");
                     continue;
                 }
             }
@@ -35,6 +36,7 @@ public class Ex1Main {
                     boolean B = Ex1.isNumber(num2);
                     System.out.println("num2 = " + num2 + " is number: " + B + " , value: " + Ex1.number2Int(num2));
                     if (Ex1.number2Int(num2) == -1){
+                        System.out.println("ERR: num2 is in the wrong format! ("+num2+")");
                         continue;
                     }
                 }
@@ -43,6 +45,12 @@ public class Ex1Main {
                     //input 3 - base
             System.out.println("Enter a base for output: (a number [2,16]");
                     int b = sc.nextInt();
+
+                    //check if b is in the correct format of [2,16]
+                    if (2 > b || b > 16){
+                        System.out.println("ERR: wrong base, should be [2,16], got ("+b+")");
+                        continue;
+                    }
 
                     int sum = Ex1.number2Int(num1) + Ex1.number2Int(num2);
                     int mult = Ex1.number2Int(num1) * Ex1.number2Int(num2);

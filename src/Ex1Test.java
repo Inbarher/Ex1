@@ -42,7 +42,13 @@ public class Ex1Test {
            Assert.assertEquals("6EbF", Ex1.int2Number(104,15));
            Assert.assertEquals("6DbE", Ex1.int2Number(97,14));
            Assert.assertEquals("6CbD", Ex1.int2Number(90,13));
-           Assert.assertEquals("6DbE", Ex1.int2Number(83,12));
+           Assert.assertEquals("6BbC", Ex1.int2Number(83,12));
+           Assert.assertEquals("6AbB", Ex1.int2Number(76,11));
+           Assert.assertEquals("69bA", Ex1.int2Number(69,10));
+           Assert.assertEquals("68b9", Ex1.int2Number(62,9));
+           Assert.assertEquals("67b8", Ex1.int2Number(55,8));
+
+
         }
         @Test
         void number2IntTest() {
@@ -80,6 +86,7 @@ public class Ex1Test {
             Assert.assertEquals("123bA", Ex1.maxIndex(new String[]{"1", "2","6b0","123bA"}));
             Assert.assertEquals("6DbE", Ex1.maxIndex(new String[]{"6BbC","67b8","6DbE"}));
             Assert.assertEquals("1505", Ex1.maxIndex(new String[]{"2/3%bA","1B","6FbG","1505"}));
+            Assert.assertEquals("15978", Ex1.maxIndex(new String[]{"1","55", "30","15978"}));
 
 
         }

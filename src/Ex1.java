@@ -20,7 +20,7 @@ public class Ex1 {
      * @return
      */
 
-
+    //Convert a number in base 2-16 to base 10
     public static int number2Int(String num) {
         int ans = -1;
         //check if num is in the correct format
@@ -55,7 +55,8 @@ public class Ex1 {
      * @param a a String representing a number
      * @return true iff the given String is in a number format
      */
-
+    //Checks if string is in the true format: <num><b><base>
+    //The function returns true or false.
     public static boolean isNumber(String a) {
         boolean ans = true;
         String topString = "0123456789ABCDEF";
@@ -107,11 +108,14 @@ public class Ex1 {
      * @param base the basis [2,16]
      * @return a String representing a number (in base) equals to num, or an empty String (in case of wrong input).
      */
+    //Converts a decimal number to a number in the requested base.
+    //The function accepts a number in base 10 and a base between 2-16.
+    //The function returns the number as a string from the format <num><b><base>
     public static String int2Number(int num, int base) {
         String ans = "";
-        // first convert the decimal number to the required base
-        String topString = "0123456789ABCDEFG";
 
+        String topString = "0123456789ABCDEFG";
+        // first convert the decimal number to the required base
         while (num > 0) {
             ans += topString.charAt(num % base);
             num /= base;
@@ -122,31 +126,14 @@ public class Ex1 {
         return Ans;
     }
 
-    public static boolean isnum(String num) {
-        boolean ans = true;
-        String topString = "0123456789";
-        for (int i = 0; i < num.length(); i++) {
-            if (topString.indexOf(num.charAt(i)) == -1) {
-                ans = false;
-            }
-        }
-        return ans;
-    }
-
-    public static boolean isbase(int num) {
-        boolean ans = true;
-        if (2 <= num && num <= 16) ;
-
-        return ans;
-    }
-
-
         /**
          * Checks if the two numbers have the same value.
          * @param n1 first number
          * @param n2 second number
          * @return true iff the two numbers have the same values.
          */
+        //The function checks if value of two numbers is the same (numbers in the format <num><b><base>)
+        //
         public static boolean equals(String n1, String n2) {
             boolean ans = false;
             if (number2Int(n1)==number2Int(n2)){
@@ -163,6 +150,8 @@ public class Ex1 {
          * @return the index in the array in with the largest number (in value).
          *
          */
+        //function that takes an array and prints the largest index in the array
+        //
         public static String maxIndex(String[] arr) {
             String ans = arr[0];
             int max = number2Int(arr[0]);

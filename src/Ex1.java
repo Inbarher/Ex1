@@ -1,4 +1,4 @@
-//package assignments.ex1;
+//ID: 214450371
 /**
  * This class represents a simple solution for Ex1.
  * As defined here: https://docs.google.com/document/d/1AJ9wtnL1qdEs4DAKqBlO1bXCM6r6GJ_J/r/edit/edit
@@ -125,6 +125,11 @@ public class Ex1 {
         int num = numm;
         String topString = "0123456789ABCDEFG";
 
+        if (2 > base || base > 16){
+            Ans = "";
+        }
+        else {
+
         //in case that the base is 10
         if (base==10) {
             Ans = num +"";
@@ -142,12 +147,13 @@ public class Ex1 {
             Ans = reversedAns + "b" + topString.charAt(base);
 
             //Edge case
-            if (numm ==0) {
-                  Ans = "0" + Ans;
-                  if (base == 10) {
-                      Ans = "0";
-                  }
+            if (numm == 0) {
+                Ans = "0" + Ans;
+                if (base == 10) {
+                    Ans = "0";
+                }
             }
+        }
         }
         return Ans;
     }

@@ -1,4 +1,4 @@
-//package assignments.ex1;
+//ID: 214450371
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -51,7 +51,9 @@ public class Ex1Test {
            Assert.assertEquals("0", Ex1.int2Number(0,10));
            Assert.assertEquals("1b2", Ex1.int2Number(1,2));
            Assert.assertEquals("7", Ex1.int2Number(7,10));
-
+           Assert.assertEquals("", Ex1.int2Number(7,17));
+           Assert.assertEquals("", Ex1.int2Number(7,1));
+           Assert.assertEquals("", Ex1.int2Number(7,0));
         }
         @Test
         void number2IntTest() {

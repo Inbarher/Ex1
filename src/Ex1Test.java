@@ -90,7 +90,8 @@ public class Ex1Test {
             Assert.assertEquals("6DbE", Ex1.maxIndex(new String[]{"6BbC","67b8","6DbE"}));
             Assert.assertEquals("1505", Ex1.maxIndex(new String[]{"2/3%bA","1B","6FbG","1505"}));
             Assert.assertEquals("15978", Ex1.maxIndex(new String[]{"1","55", "30","15978"}));
-
+            Assert.assertEquals("0", Ex1.maxIndex(new String[]{"0","0", "0","0"}));
+            Assert.assertEquals("0", Ex1.maxIndex(new String[]{"0","g","0","0"}));
 
         }
 
